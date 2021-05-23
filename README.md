@@ -1,19 +1,27 @@
-# Установка зависимостей
+# Настройка пре-коммит хуков
+
+## 1 - Установка зависимостей
 
 Установить в проект следующие пакеты.
 
 ```bash
-npm install --save-dev prettier husky lint-staged
+npm install --save-dev prettier eslint
 ```
 
-## Интерграция плагинов
+## 2 - Инициализация lint-staged и husky
+
+```bash
+npx mrm lint-staged
+```
+
+## 3 - Интерграция плагинов
 
 Ссылки на документацию по интеграции плагинов в популярные редакторы.
 
 - [Prettier editor integration](https://prettier.io/docs/en/editors.html)
 - [ESLint editor integration](https://eslint.org/docs/user-guide/integrations)
 
-## Настройки VSCode
+## 4 - Настройки VSCode
 
 Для комфортной работы, после установки плагинов, нужно добавить несколько
 настроек редактора для автосохранения и форматирования файлов.
